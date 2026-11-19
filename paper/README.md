@@ -9,8 +9,9 @@ When added, it must carry the IEEE copyright notice and the full citation to the
 IEEE publication.  The final IEEE-published version (the version of record) must
 not be posted here.
 
-The earlier BMVC 2026 submission PDF has been removed from the public
-repository because it is not the accepted BIBM version.
+The earlier BMVC 2026 submission PDF has been removed from the current public
+tree because it is not the accepted BIBM version.  It remains in the Git
+history of the initial commit.
 
 ## IEEE copyright notice
 
