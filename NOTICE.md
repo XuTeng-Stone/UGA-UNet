@@ -4,7 +4,9 @@ This repository accompanies the paper:
 
 > UGA-UNet: Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring
 > Teng Xu, Kuan Huang, Boyang Li, and Meng Xu
-> 2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
+> The International Workshop on Adaptable, Reliable, and Responsible Learning
+> for Healthcare (ARRL-Health'26), held in conjunction with IEEE BIBM 2026
+> Paper B2270
 
 © 2026 IEEE.  Personal use of the paper is permitted.  Permission from IEEE must
 be obtained for all other uses of the paper.

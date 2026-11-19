@@ -1,8 +1,9 @@
 # Additional / archival material
 
-This folder preserves experiments that are **not part of the BIBM 2026 paper's
-four benchmark settings**.  It is included for completeness and reproducibility
-of the broader project, not as part of the official paper release.
+This folder preserves experiments that are **not part of the ARRL-Health'26
+paper's four benchmark settings**.  It is included for completeness and
+reproducibility of the broader project, not as part of the official paper
+release.
 
 ## Contents
 

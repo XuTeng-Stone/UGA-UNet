@@ -2,7 +2,8 @@
 
 **Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring**  
 Teng Xu, Kuan Huang, Boyang Li, and Meng Xu  
-Accepted at the 2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
+Accepted at the International Workshop on Adaptable, Reliable, and Responsible
+Learning for Healthcare (ARRL-Health'26), held in conjunction with IEEE BIBM 2026.
 
 This repository is the cleaned research code for **UGA-UNet**, a compact
 3.9 M-parameter segmentation network with a Local–Global Bottleneck (LGB) and
@@ -11,9 +12,10 @@ maps to identify ambiguous boundary pixels during training and aligns their
 decoder features with stable class prototypes.  At inference, only UGA-UNet is
 used; MedSAM and the uncertainty maps are not required.
 
-> **Paper status.** Accepted at IEEE BIBM 2026.  The accepted version will be
-> posted in [`paper/`](paper/) with the IEEE copyright notice once available.
-> The final IEEE-published version of record will not be posted.  See
+> **Paper status.** Accepted at ARRL-Health'26 (paper B2270), held in
+> conjunction with IEEE BIBM 2026.  The accepted version will be posted in
+> [`paper/`](paper/) with the IEEE copyright notice once available.  The final
+> IEEE-published version of record will not be posted.  See
 > [`paper/README.md`](paper/README.md).
 
 ---
@@ -247,8 +249,9 @@ The BibTeX entry is also available in [`CITATION.bib`](CITATION.bib).
 @inproceedings{xu2026ugaunet,
   title     = {UGA-UNet: Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring},
   author    = {Xu, Teng and Huang, Kuan and Li, Boyang and Xu, Meng},
-  booktitle = {2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
-  year      = {2026}
+  booktitle = {The International Workshop on Adaptable, Reliable, and Responsible Learning for Healthcare (ARRL-Health'26), in conjunction with IEEE BIBM 2026},
+  year      = {2026},
+  note      = {Paper B2270}
 }
 ```
 
