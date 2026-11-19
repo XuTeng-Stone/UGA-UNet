@@ -14,3 +14,7 @@ added, please contact the authors before redistribution or commercial use.
 
 The datasets used by the code are not included.  They remain subject to their
 original licenses and terms of use.  See `docs/DATASETS.md`.
+
+Pretrained checkpoints are provided for research reproducibility.  The datasets
+used to train them remain subject to their original licenses; those licenses may
+impose additional restrictions on models or derived artifacts.
