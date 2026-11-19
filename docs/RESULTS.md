@@ -59,11 +59,17 @@ CSV: [`../results/ablation_anchor.csv`](../results/ablation_anchor.csv).
 | more_selective | 3 | 8 | .1 | .9 | .6747 | .7616 | 10.2012 | 27.5037 |
 
 CSV: [`../results/sensitivity.csv`](../results/sensitivity.csv).
+Training logs: [`../results/sensitivity_logs/`](../results/sensitivity_logs/).
+
+Additional hyperparameter and component sweeps:
+[`../results/anchor_hyperparameter_sweep.csv`](../results/anchor_hyperparameter_sweep.csv)
+and
+[`../results/bottleneck_component_ablation.csv`](../results/bottleneck_component_ablation.csv).
 
 ## Available per-run results
 
 [`../results/available_runs.csv`](../results/available_runs.csv) indexes every
-small result CSV found in the original workspace (159 runs), with the dataset,
+small result CSV found in the original workspace (157 runs), with the dataset,
 model, setting, seed, and metrics.  Raw files are in
 [`../results/raw/`](../results/raw/).
 

@@ -61,7 +61,20 @@ python scripts/generate_uncertainty.py --dataset qata_v2  --data-root data --dev
 The default is `N = 12`, jitter `±5`, 3×3 Gaussian smoothing, and min–max
 normalization.  Existing maps are skipped; pass `--overwrite` to regenerate.
 
-## 4. Train
+## 4. Use released checkpoints (optional)
+
+The [v1.0.0 release](https://github.com/XuTeng-Stone/UGA-UNet/releases/tag/v1.0.0)
+contains the 13 UGA-UNet checkpoints used for the paper's four datasets and
+three seeds, plus the BUSI no-anchor ablation checkpoint.  Download the assets
+and evaluate directly:
+
+```bash
+python scripts/evaluate.py \
+  --checkpoint ugaunet_busi_seed42_anchor.pth \
+  --dataset busi --model ugaunet --data-root data --device cuda:0
+```
+
+## 5. Train
 
 The paper setting is 100 epochs, batch size 8, AdamW with learning rate `1e-4`,
 input `256 × 256`, and the anchor loss enabled.  The YAML configs encode these
@@ -90,7 +103,7 @@ For the three seeds used in Table 4:
 DATA_ROOT=data DEVICE=cuda:0 bash scripts/run_all_seeds.sh
 ```
 
-## 5. Evaluate
+## 6. Evaluate
 
 ```bash
 python scripts/evaluate.py \
@@ -100,7 +113,7 @@ python scripts/evaluate.py \
 
 This writes the metrics to stdout and, with `--out`, to a JSON file.
 
-## 6. Expected metrics
+## 7. Expected metrics
 
 Paper Table 4, mean±std over seeds 42, 123, and 999:
 
@@ -114,7 +127,7 @@ Paper Table 4, mean±std over seeds 42, 123, and 999:
 Small differences are expected from GPU nondeterminism, library versions, and
 the exact pretrained baseline weights.
 
-## 7. Original experiment scripts
+## 8. Original experiment scripts
 
 The scripts that produced the reported numbers are archived unchanged in
 [`../reproduce/original/`](../reproduce/original/).  They contain the original
@@ -128,7 +141,7 @@ They are provided for provenance, not as the recommended entry point.  If you
 need to rerun them, edit those paths or create a symlink/`DATA_ROOT` matching
 the expected layout.  See [`CODE_MAP.md`](CODE_MAP.md).
 
-## 8. Troubleshooting
+## 9. Troubleshooting
 
 **`FileNotFoundError` in a dataset loader.** Check `--data-root` and
 `--splits-dir`.  BUSI expects `images/` and `labels/`; BrEaST expects paths in

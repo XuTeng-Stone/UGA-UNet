@@ -11,6 +11,9 @@ available in the original experiment workspace.
 | `ablation_bottleneck.csv` | Bottleneck design / depth sweep on BUSI without the anchor loss (paper Table 2). |
 | `ablation_anchor.csv` | Anchor-loss ablation on BUSI (paper Table 3). |
 | `sensitivity.csv` | Anchor hyperparameter sensitivity on BUSI (ring radii and quantiles). |
+| `sensitivity_logs/` | Training logs for the four sensitivity runs. |
+| `anchor_hyperparameter_sweep.csv` | Anchor weight/margin/background-weight sweep on BUSI. |
+| `bottleneck_component_ablation.csv` | Conv / local / global / fusion bottleneck comparison. |
 | `available_runs.csv` | Every per-run CSV found in the original workspace, normalized to `dataset, model, setting, seed, params, FLOPs, mIoU, Dice, ASSD, HD95`. |
 | `raw/` | Raw per-run CSV files, copied unchanged from the original result folders. |
 

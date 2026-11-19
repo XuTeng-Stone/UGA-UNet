@@ -1,13 +1,16 @@
 # Notice
 
-This repository accompanies a manuscript under review:
+This repository accompanies the paper:
 
 > UGA-UNet: Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring
-> BMVC 2026 Submission #308
+> Teng Xu, Kuan Huang, Boyang Li, and Meng Xu
+> 2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
 
-The code and manuscript are provided for review purposes.  No license is granted
-for redistribution or commercial use while the paper is under review.  A final
-license will be added upon acceptance.
+© 2026 IEEE.  Personal use of the paper is permitted.  Permission from IEEE must
+be obtained for all other uses of the paper.
+
+A license for the code has not been selected yet.  Until a `LICENSE` file is
+added, please contact the authors before redistribution or commercial use.
 
 The datasets used by the code are not included.  They remain subject to their
 original licenses and terms of use.  See `docs/DATASETS.md`.

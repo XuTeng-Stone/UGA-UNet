@@ -1,7 +1,8 @@
 # UGA-UNet
 
 **Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring**  
-BMVC 2026 Submission #308
+Teng Xu, Kuan Huang, Boyang Li, and Meng Xu  
+Accepted at the 2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
 
 This repository is the cleaned research code for **UGA-UNet**, a compact
 3.9 M-parameter segmentation network with a Local–Global Bottleneck (LGB) and
@@ -10,9 +11,10 @@ maps to identify ambiguous boundary pixels during training and aligns their
 decoder features with stable class prototypes.  At inference, only UGA-UNet is
 used; MedSAM and the uncertainty maps are not required.
 
-> **Review status.** The paper is under review.  The PDF is included under
-> [`paper/`](paper/).  Please do not redistribute this repository or the
-> manuscript before the review process is complete.
+> **Paper status.** Accepted at IEEE BIBM 2026.  The accepted version will be
+> posted in [`paper/`](paper/) with the IEEE copyright notice once available.
+> The final IEEE-published version of record will not be posted.  See
+> [`paper/README.md`](paper/README.md).
 
 ---
 
@@ -48,6 +50,18 @@ fewer than 10 M parameters.
 Full tables, ablation results, and available per-run CSVs are in
 [`results/`](results/) and [`docs/RESULTS.md`](docs/RESULTS.md).
 
+## Pretrained checkpoints
+
+[Release v1.0.0](https://github.com/XuTeng-Stone/UGA-UNet/releases/tag/v1.0.0)
+provides 13 UGA-UNet checkpoints:
+
+- seeds 42, 123, and 999 for BUSI, BrEaST, QaTa-v1, and QaTa-v2;
+- one BUSI seed-42 checkpoint trained without the anchor loss (Table 3 ablation);
+- `SHA256SUMS` for integrity checks.
+
+All state dicts load directly into
+`UGAUNet(mode="fusion", n_classes=2, num_bottleneck_blocks=2)`.
+
 ## Repository layout
 
 ```
@@ -65,10 +79,11 @@ UGA-UNet/
 │   ├── prepare_qata_v1_split.py
 │   └── run_all_seeds.sh     # three-seed reproduction
 ├── configs/                 # YAML configs for the four datasets
+├── tests/                   # CPU smoke tests
 ├── splits/                  # fixed train/test file lists
 ├── results/                 # paper tables, sensitivity, raw per-run CSVs
 ├── figures/                 # qualitative figures from the paper
-├── paper/                   # manuscript PDF
+├── paper/                   # paper metadata / accepted version
 ├── docs/                    # method, datasets, reproduction, code map
 └── reproduce/original/      # original experiment scripts (archival)
 ```
@@ -223,12 +238,14 @@ See [`docs/METHOD.md`](docs/METHOD.md) for details and the code map.
 
 ## Citation
 
+The BibTeX entry is also available in [`CITATION.bib`](CITATION.bib).
+
 ```bibtex
-@inproceedings{ugaunet2026,
+@inproceedings{xu2026ugaunet,
   title     = {UGA-UNet: Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring},
-  booktitle = {British Machine Vision Conference (BMVC)},
-  year      = {2026},
-  note      = {Submission \#308}
+  author    = {Xu, Teng and Huang, Kuan and Li, Boyang and Xu, Meng},
+  booktitle = {2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+  year      = {2026}
 }
 ```
 
@@ -242,5 +259,13 @@ sources and [`docs/CODE_MAP.md`](docs/CODE_MAP.md) for provenance notes.
 
 ## Contact
 
-For questions about the paper or code, please contact the authors.  The
-manuscript is anonymous during review.
+For questions about the paper or code, please contact the authors or open an
+issue on GitHub.
+
+## IEEE copyright notice
+
+© 2026 IEEE.  Personal use of this material is permitted.  Permission from IEEE
+must be obtained for all other uses, in any current or future media, including
+reprinting/republishing this material for advertising or promotional purposes,
+creating new collective works, for resale or redistribution to servers or lists,
+or reuse of any copyrighted component of this work in other works.

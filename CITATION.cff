@@ -3,6 +3,13 @@ message: "If you use this code, please cite the paper."
 title: "UGA-UNet: Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring"
 type: software
 authors:
-  - name: "UGA-UNet Authors"
+  - family-names: "Xu"
+    given-names: "Teng"
+  - family-names: "Huang"
+    given-names: "Kuan"
+  - family-names: "Li"
+    given-names: "Boyang"
+  - family-names: "Xu"
+    given-names: "Meng"
 year: 2026
-note: "BMVC 2026 Submission #308. Author information is withheld during review."
+note: "Accepted at the 2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)."

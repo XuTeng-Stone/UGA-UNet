@@ -3,7 +3,7 @@
 This package is a cleaned, runnable implementation of the method described in
 
     UGA-UNet: Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring
-    BMVC 2026 Submission #308
+    IEEE BIBM 2026
 
 The core contributions are:
 
