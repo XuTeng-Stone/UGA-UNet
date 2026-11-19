@@ -59,8 +59,9 @@ The Python files in these folders were checksum-identical to the corresponding
 root scripts for the paper datasets.  They are not duplicated in this
 repository; the single canonical originals are in `reproduce/original/`.
 `UCLM` is an additional dataset that is not part of the paper's four benchmark
-settings; it is omitted from the cleaned code and its results are not included
-in the paper tables.
+settings; its code and result CSVs are archived under
+[`../additional/UCLM/`](../additional/UCLM/) and are not included in the paper
+tables.
 
 ## Original results
 
@@ -71,6 +72,8 @@ images.  This repository includes:
 - the paper tables (`results/paper_table4.csv`, ablations, sensitivity),
 - the qualitative figures from the paper (`figures/`).
 
-It does **not** include `*.pth` checkpoints, raw datasets, or the large
-`figures_sets/` visualization folders.  Keep those in your local backup or an
-external artifact store.
+The 13 UGA-UNet checkpoints are available in the
+[`v1.0.0` release](https://github.com/XuTeng-Stone/UGA-UNet/releases/tag/v1.0.0).
+The much larger baseline checkpoints (TransUNet, AnatoNet, etc.), raw datasets,
+and the remaining experiment outputs are not included.  Keep those in your
+local backup or an external artifact store.

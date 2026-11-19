@@ -20,4 +20,5 @@ original licenses and terms of use.  See `docs/DATASETS.md`.
 
 Pretrained checkpoints are provided for research reproducibility.  The datasets
 used to train them remain subject to their original licenses; those licenses may
-impose additional restrictions on models or derived artifacts.
+impose additional restrictions on models or derived artifacts.  The checkpoints
+are not part of the MIT-licensed source code.
