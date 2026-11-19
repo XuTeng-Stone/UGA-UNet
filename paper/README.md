@@ -9,9 +9,10 @@ When added, it must carry the IEEE copyright notice and the full citation to the
 IEEE publication.  The final IEEE-published version (the version of record) must
 not be posted here.
 
-The earlier BMVC 2026 submission PDF has been removed from the current public
-tree because it is not the accepted BIBM version.  It remains in the Git
-history of the initial commit.
+The earlier BMVC 2026 submission PDF is not in the current Git history.  It was
+removed by a history rewrite because it is not the accepted BIBM version.
+GitHub may still serve cached pre-rewrite commits by SHA until its cache is
+purged; the repository's branch and tag no longer reference them.
 
 ## IEEE copyright notice
 
