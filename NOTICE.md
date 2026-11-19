@@ -9,8 +9,11 @@ This repository accompanies the paper:
 © 2026 IEEE.  Personal use of the paper is permitted.  Permission from IEEE must
 be obtained for all other uses of the paper.
 
-A license for the code has not been selected yet.  Until a `LICENSE` file is
-added, please contact the authors before redistribution or commercial use.
+The original code in this repository is released under the MIT License; see
+[`LICENSE`](LICENSE).  Baseline model definitions under
+`ugaunet/models/third_party/` retain their upstream licenses and attribution.
+The IEEE-copyrighted paper is not covered by the MIT License; see the IEEE
+notice above.
 
 The datasets used by the code are not included.  They remain subject to their
 original licenses and terms of use.  See `docs/DATASETS.md`.

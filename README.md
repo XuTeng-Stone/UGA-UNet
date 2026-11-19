@@ -66,6 +66,8 @@ All state dicts load directly into
 
 ```
 UGA-UNet/
+├── LICENSE                  # MIT (original code)
+├── CITATION.bib / .cff
 ├── ugaunet/                 # clean, importable implementation
 │   ├── models/              # UGAUNet, LGB, baselines, third-party sources
 │   ├── losses/              # CE+Dice and Uncertainty-Guided Anchor Loss
@@ -84,6 +86,7 @@ UGA-UNet/
 ├── results/                 # paper tables, sensitivity, raw per-run CSVs
 ├── figures/                 # qualitative figures from the paper
 ├── paper/                   # paper metadata / accepted version
+├── additional/              # UCLM and legacy experiments (not in the paper)
 ├── docs/                    # method, datasets, reproduction, code map
 └── reproduce/original/      # original experiment scripts (archival)
 ```
@@ -248,6 +251,18 @@ The BibTeX entry is also available in [`CITATION.bib`](CITATION.bib).
   year      = {2026}
 }
 ```
+
+## License
+
+The original code is released under the [MIT License](LICENSE).  Baseline model
+definitions under [`ugaunet/models/third_party/`](ugaunet/models/third_party/)
+retain their upstream licenses and attribution.  The IEEE-copyrighted paper is
+not covered by the MIT License; see [`NOTICE.md`](NOTICE.md).
+
+## Additional experiments
+
+[`additional/`](additional/) contains the BUS-UCLM experiments and earlier
+legacy scripts that are not part of the paper's four benchmark settings.
 
 ## Acknowledgements
 
