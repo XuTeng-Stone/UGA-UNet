@@ -1,0 +1,12 @@
+# Baseline comparison: U-Net with CE + Dice, no anchor loss.
+dataset: busi
+model: unet
+anchor: false
+data_root: data
+epochs: 100
+batch_size: 8
+lr: 0.0001
+seed: 42
+image_size: 256
+eval_every: 5
+out_dir: runs

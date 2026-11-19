@@ -1,0 +1,8 @@
+bottleneck,k,dice,hd95,params_m,flops_g
+Conv only,1,0.685,51.99,3.88,13.52
+Local only,1,0.697,40.62,2.78,12.39
+Global only,1,0.742,38.22,3.23,12.44
+Local+Global,1,0.749,33.49,3.31,12.52
+Local+Global,2,0.761,32.42,3.91,12.74
+Local+Global,3,0.765,30.62,4.52,12.96
+Local+Global,4,0.774,29.75,5.12,13.17

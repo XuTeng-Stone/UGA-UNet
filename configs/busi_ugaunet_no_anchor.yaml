@@ -1,0 +1,14 @@
+# Architecture-only ablation (Lseg; no anchor loss), paper Table 2 style.
+dataset: busi
+model: ugaunet
+anchor: false
+data_root: data
+epochs: 100
+batch_size: 8
+lr: 0.0001
+seed: 42
+image_size: 256
+eval_every: 5
+lgb_mode: fusion
+lgb_blocks: 2
+out_dir: runs

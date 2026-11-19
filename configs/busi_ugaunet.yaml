@@ -1,0 +1,23 @@
+# UGA-UNet + Uncertainty-Guided Anchor Loss on BUSI (paper setting)
+dataset: busi
+model: ugaunet
+anchor: true
+data_root: data
+epochs: 100
+batch_size: 8
+lr: 0.0001
+seed: 42
+image_size: 256
+eval_every: 5
+lgb_mode: fusion
+lgb_blocks: 2
+alpha_max: 0.1
+anchor_margin: 0.3
+lambda_bg: 0.25
+warmup_ratio: 0.1
+rin: 3
+rout: 8
+q_low: 0.2
+q_high: 0.8
+min_points: 10
+out_dir: runs

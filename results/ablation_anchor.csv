@@ -1,0 +1,3 @@
+configuration,dice,hd95
+LGB (k=2),0.761,32.42
+LGB (k=2) + Anchor Loss,0.775,22.23

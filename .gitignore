@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# Data and checkpoints
+data/
+datasets/
+runs/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.npy
+*.npz
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log

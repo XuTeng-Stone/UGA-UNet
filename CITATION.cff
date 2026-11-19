@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "UGA-UNet: Lightweight Segmentation with Uncertainty-Guided Boundary Anchoring"
+type: software
+authors:
+  - name: "UGA-UNet Authors"
+year: 2026
+note: "BMVC 2026 Submission #308. Author information is withheld during review."
